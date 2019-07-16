@@ -9,10 +9,38 @@ html {
 
 body {
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .sidebar {
   grid-area: sidebar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sidebar span {
+  display: inline-block;
+  position: relative;
+}
+
+.sidebar span:before,
+.sidebar span:after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  border-bottom: 1px solid black;
+  top: 6px;
+  width: 500%;
+}
+.sidebar span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.sidebar span:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 .sidebar-text {
@@ -23,18 +51,49 @@ body {
 
 .left-content {
   grid-area: left-content;
+  padding-right: 60px;
 }
 
 .right-content {
   grid-area: right-content;
+  background-image: url(football.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .header {
   grid-area: header;
 }
 
+.header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.header li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 300%;
+}
+
 .footer {
   grid-area: footer;
+  font-size: 200%;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.footer p {
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -45,26 +104,12 @@ body {
   padding: 40px;
   height: 100vh;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-template-columns: 40px 1fr 2fr;
-  grid-template-rows: 40px 1fr 40px;
+  grid-template-rows: 60px 1fr 40px;
   grid-template-areas:
     "....... ............ header"
     "sidebar left-content right-content"
-    "....... ............ footer";
-  background-color: #fff;
+    "footer  footer       footer";
   color: #444;
-}
-
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 150%;
-}
-
-.header,
-.footer {
-  background-color: #999;
 }

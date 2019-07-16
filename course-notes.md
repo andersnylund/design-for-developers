@@ -279,4 +279,17 @@
 - Shutterstock UI Kit
 - iStock Photo
 
-## 
+## UI Kit Demo
+
+## Images and Performance
+
+- Images take over the half of the traffic on the web
+- Google images filter for images that are available for reuse
+
+## SVG
+
+- Using SVG can help a lot in reducing the size of images and icons
+
+## Full page background
+
+- 
