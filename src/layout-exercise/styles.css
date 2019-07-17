@@ -65,6 +65,13 @@ body {
   background-position: center center;
 }
 
+.clip-area {
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(100% 50%, 50% 100%, 100% 100%);
+  background-color: rgba(255, 255, 255, 0.055);
+}
+
 .header {
   grid-area: header;
 }
