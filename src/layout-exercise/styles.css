@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  --background: hsl(67, 9%, 79%);
+  --accent-blue: hsl(198, 33%, 39%);
 }
 *,
 *:before,
@@ -10,6 +12,7 @@ html {
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background: var(--background);
 }
 
 .sidebar {
@@ -18,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  color: var(--accent-blue);
 }
 
 .sidebar span {
@@ -30,7 +34,7 @@ body {
   content: "";
   position: absolute;
   height: 6px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--accent-blue);
   top: 6px;
   width: 500%;
 }
@@ -79,6 +83,15 @@ body {
   padding-left: 10px;
 }
 
+.header li svg {
+  height: 40px;
+  width: 40px;
+}
+
+.header li svg path {
+  fill: var(--accent-blue);
+}
+
 h1 {
   font-family: "Merriweather", serif;
   font-size: 300%;
@@ -89,6 +102,7 @@ h1 {
   font-size: 200%;
   font-family: "Merriweather", serif;
   text-align: center;
+  color: var(--accent-blue);
 }
 
 .footer p {
