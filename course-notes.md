@@ -70,7 +70,7 @@
 
 ## Layout in CSS
 
-## Using ClipPath  & Other Masking Tools
+## Using ClipPath & Other Masking Tools
 
 - css property clippath allows to create e.g. polygons
 - https://codepen.io/yoksel/full/fsdbu/
@@ -79,7 +79,7 @@
 
 ## Grid by Example Demo
 
-- By using gridbyexample.com you can find good starters for layouts 
+- By using gridbyexample.com you can find good starters for layouts
   - Eg. Grid by Example 12 is the example used in the workshop
 
 ## Color modes
@@ -111,7 +111,7 @@
 
 - By just sticking to one colour you can get quite good looking color palettes
 
-###  Analogous
+### Analogous
 
 - Colors that are next to each other on the color spectrum
 
@@ -125,13 +125,13 @@
 
 - Even if you would select an analogous palette, you are going to need a complementary color to draw the users attention to specific things
 
-### Tetriadic 
+### Tetriadic
 
 ### Compound
 
 - Whatever you want it to be
 
-### Monotone 
+### Monotone
 
 ### Duotone
 
@@ -150,7 +150,7 @@
 ### RGB(A)
 
 - RGB is not a good way to define colors in the browser
-- It doesn't easily allow to make a color e.g. brighter 
+- It doesn't easily allow to make a color e.g. brighter
 
 ### HSL(A)
 
@@ -170,7 +170,7 @@
 - Composition idea => add more colors step by step
 - Enables to create the color palette the same way that the composition of the UI was created
 
-### Paletton 
+### Paletton
 
 - https://paletton.com
 
@@ -182,7 +182,7 @@
 
 ### How to create a color palette
 
-- Find the more serious and energetic variants of the color, but also the corporate and serious variant of the colors 
+- Find the more serious and energetic variants of the color, but also the corporate and serious variant of the colors
 - Find the accents that work with the primary color
 
 ### Example of using HSL and colors
@@ -247,7 +247,7 @@
 - Kerning is the space between the letters from side to side (letter spacing)
 - Leading (line-height and vertical-align: baseline)
 - Widows and Orphans
-  - Words that are left alone on one line 
+  - Words that are left alone on one line
 - Ligatures
 - "Falling down"
   - A book has more room under the text than what they have at the top
@@ -268,7 +268,7 @@
 ## Remixing
 
 - Stealing is not okay, however, each piece of design is often a combination of previous designs that together creates something new
-- Look around, find your heroes 
+- Look around, find your heroes
 - Get inspered from multiple sources, but don't copy them directly. Instead wait and work from memory the next day
 - Reverse engineering
 
@@ -292,4 +292,26 @@
 
 ## Full page background
 
-- 
+## Loaders
+
+- By having a custom loaders people are willing to wait twice as long as otherwise
+
+## Motion design languange
+
+- It is probably worth it to create your own motions. Because if you use e.g. Google's material design, the user will automatically think about google
+
+## Different prototypes
+
+- Thumbnails
+  - Quick throwaway scratches for yourself
+- Storyboards
+  - Higher fidelity to explain things for coworkers
+  - Higher commitment
+  - Don't have to be super scary
+  - Make it just enough so that people understand your idea
+- Low-fi Prototype
+  - Might enable some interaction
+- High-fi Prototype
+  - Can be a separate component of the whole application e.g. a login form
+  - This can help to communicate the idea of the thing to be implemented
+-

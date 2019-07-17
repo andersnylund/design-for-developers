@@ -95,6 +95,19 @@ body {
   width: 40px;
 }
 
+.header li svg:hover {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .header li svg path {
   fill: var(--accent-blue);
 }
@@ -123,7 +136,6 @@ h1 {
 
 .wrapper {
   padding: 40px;
-  height: 100vh;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 40px 1fr 2fr;
@@ -133,4 +145,20 @@ h1 {
     "sidebar left-content right-content"
     "footer  footer       footer";
   color: #444;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px 1fr 1fr 40px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "left-content"
+      "right-content"
+      "footer";
+  }
+  .sidebar-text {
+    transform: rotate(0deg);
+  }
 }
